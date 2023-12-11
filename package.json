@@ -1,5 +1,5 @@
 {
-  "name": "webrtc-video-room",
+  "name": "webrtc-audio-room",
   "version": "2.0.4",
   "description": "WebRTC Video Room is a Single-Page App in React using React Router that provides peer-to-peer video and audio communication in a web browser with minimum dependencies required.",
   "main": "index.js",
@@ -13,9 +13,9 @@
     "build": "webpack --mode production",
     "postinstall": "webpack --mode production"
   },
-  "author": "Dian Dimitrov",
+  "author": "sheraz",
   "keywords": [
-    "WebRTC Video Chat",
+    "WebRTC audi Chat",
     "RTCPeerConnection",
     "React"
   ],
