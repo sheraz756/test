@@ -11,6 +11,7 @@ class CommunicationContainer extends React.Component {
       sid: "",
       message: "",
       audio: true,
+
       // video: true
     };
     this.handleInvitation = this.handleInvitation.bind(this);
@@ -39,7 +40,7 @@ class CommunicationContainer extends React.Component {
       this.props.media.setState({ user: "guest", bridge: "join" })
     );
     socket.on("approve", ({ message, sid }) => {
-      this.props.media.setState({ bridge: "approve" });
+      this.props.socket.emit("accept", sid);
       this.setState({ message, sid });
     });
     socket.emit("find");

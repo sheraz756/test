@@ -104,7 +104,8 @@ const Communication = (props) => (
           data-ref="message"
           maxLength="30"
           required
-          placeholder="Hi, I'm John Doe."
+          value="name"
+          style={{ display: "none" }}
         />
         <button className="primary-button">Send</button>
       </form>
