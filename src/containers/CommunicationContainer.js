@@ -54,7 +54,6 @@ class CommunicationContainer extends React.Component {
     this.setState({ [e.target.dataset.ref]: e.target.value });
   }
   send(e) {
-    e.preventDefault();
     this.props.socket.emit("auth", this.state);
     this.hideAuth();
   }
